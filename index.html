@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"></a>
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="BMI Calculator.html">BMI Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row">
+            <!-- What is BMI? Section -->
+            <div class="col-md-6">
+                <section>
+                    <h2>What is BMI?</h2>
+                    <p>
+                        Body Mass Index (BMI) is a number calculated from a person’s weight and height. It is used as a screening tool to classify whether an individual is underweight, normal weight, overweight, or obese. Although it does not directly measure body fat, BMI provides a reliable estimate for most people.
+                    </p>
+                </section>
+            </div>
+
+            <!-- How is BMI Calculated? Section -->
+            <div class="col-md-6">
+                <section>
+                    <h2>How is BMI Calculated?</h2>
+                    <p>
+                        BMI is calculated using the following formula:
+                    </p>
+                    <p>
+                        <strong>BMI = Weight (kg) / [Height (m) x Height (m)]</strong>
+                    </p>
+                    <p>
+                        For example, if a person weighs 70 kilograms and their height is 1.75 meters, their BMI would be:
+                    </p>
+                    <p>
+                        <strong>BMI = 70 / (1.75 * 1.75) = 22.86</strong>
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- How is BMI Interpreted? Section -->
+            <div class="col-md-6">
+                <section>
+                    <h2>How is BMI Interpreted?</h2>
+                    <p>
+                        The BMI result is classified into four categories:
+                    </p>
+                    <ul>
+                        <li><strong>Underweight:</strong> BMI less than 18.5</li>
+                        <li><strong>Normal weight:</strong> BMI between 18.5 and 24.9</li>
+                        <li><strong>Overweight:</strong> BMI between 25 and 29.9</li>
+                        <li><strong>Obesity:</strong> BMI between 30 and 34.9</li>
+                        <li><strong>Extreme Obesity:</strong> BMI of 35 and above</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-md-6">
+                <img src="Images/BMI.jpeg" alt="BMI Image" class="img-fluid">
+            </div>
+        </div>
+
+        <section class="mt-4">
+            <h2>What Should You Do Based on Your BMI?</h2>
+            <p><strong>If your BMI is under 18.5:</strong> This suggests you are underweight. It's important to eat a balanced diet rich in calories and nutrients. Consider speaking with a healthcare professional to evaluate your overall health.</p>
+
+            <p><strong>If your BMI is between 18.5 and 24.9:</strong> You have a normal, healthy weight. Maintain your current lifestyle by staying active and eating a balanced diet to preserve your health.</p>
+
+            <p><strong>If your BMI is between 25 and 29.9:</strong> This indicates you are overweight. You may need to adopt healthier eating habits and increase physical activity to reduce your weight and improve your health.</p>
+
+            <p><strong>If your BMI is 30 or higher:</strong> This classifies as obesity, which increases the risk of serious health conditions such as heart disease, diabetes, and hypertension. Consult with a healthcare provider to explore weight loss strategies, including diet changes and physical activity plans.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Donatus Oragbon</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript for scroll effect
+        window.addEventListener('scroll', function() {
+            const mainContent = document.querySelector('main');
+            const scrollPosition = window.scrollY;
+
+            // Update the main content's position based on scroll
+            mainContent.style.transform = `translateY(${-scrollPosition}px)`;
+        });
+    </script>
+</body>
+</html>

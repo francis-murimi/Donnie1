@@ -1,0 +1,91 @@
+/* Style for the body to add a background image */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background for readability */
+    margin: 0; /* Removed margin to eliminate gap with footer */
+    padding: 20px; /* Keep padding for inner content spacing */
+    border-radius: 8px;
+    transition: transform 0.3s ease-out; /* Smooth transition for scrolling effect */
+    padding-top: 60px; /* Adjusted padding to prevent content from hiding behind navbar */
+}
+
+/* Styling for headings */
+h2 {
+    background-color: black; /* Background color for headings */
+    color: white; /* Text color for headings */
+    padding: 10px 15px; /* Padding around the heading text */
+    border-radius: 8px; /* Add some rounded corners */
+    margin-bottom: 20px; /* Add space after headings */
+    text-align: center; /* Center the heading text horizontally */
+}
+/* Styling for headings */
+h2 {
+    background-color: black; /* Background color for headings */
+    color: white; /* Text color for headings */
+    padding: 10px 15px; /* Padding around the heading text */
+    border-radius: 8px; /* Add some rounded corners */
+    margin-bottom: 20px; /* Add space after headings */
+    text-align: center; /* Center the heading text horizontally */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for h2 headings */
+h2:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+    color: #FFD700; /* Change text color to gold on hover */
+}
+
+
+
+/* Navigation styling */
+nav {
+    background-color: black; /* Changed to black */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Text color is white */
+    padding: 14px 20px;
+    display: block;
+    font-weight: bold; /* Making text bold */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Background color on hover */
+}
+
+
+
+footer {
+    text-align: center;
+    margin: 0; /* Removed margin to eliminate gap with main content */
+    background-color: black; /* Changed to black */
+    color: white; /* Text color is white */
+    padding: 10px 0; /* Added padding for the footer */
+    font-weight: bold; /* Making footer text bold */
+}
+/* General form styling */

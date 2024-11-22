@@ -1,0 +1,148 @@
+nav {
+    background-color: black; /* Changed to black */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Text color is white */
+    padding: 14px 20px;
+    display: block;
+    font-weight: bold; /* Making text bold */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Background color on hover */
+}/* General body and main styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+/* Styling for headings */
+h2 {
+    background-color: black; /* Background color for headings */
+    color: white; /* Text color for headings */
+    padding: 10px 15px; /* Padding around the heading text */
+    border-radius: 8px; /* Add some rounded corners */
+    margin-bottom: 20px; /* Add space after headings */
+    text-align: center; /* Center the heading text horizontally */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+button:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+    color: #FFD700; /* Change text color to gold on hover */
+}
+/* Hover effect for h2 headings */
+h2:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+    color: #FFD700; /* Change text color to gold on hover */
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background for readability */
+    margin: 0;
+    padding: 20px;
+    padding-top: 60px; /* Prevent content from hiding behind navbar */
+    border-radius: 8px;
+    transition: transform 0.3s ease-out; /* Smooth scrolling effect */
+}
+
+/* Styling for form container */
+#bmi {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black; /* Border to create rectangular shape */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    max-width: 400px;
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center-align content */
+}
+
+/* Styling for headings */
+h2 {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Form layout styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Space between form and result */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+/* Styling for result block */
+.result-block {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 8px;
+    display: none; /* Initially hidden */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin: 0;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    font-weight: bold;
+}

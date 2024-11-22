@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BMI Calculator</title>
+    <link rel="stylesheet" href="BMI.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BMI Calculator</a>
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="BMI Calculator.html">BMI Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main>
+        <section id="bmi">
+            <h2>Calculate Your BMI</h2>
+
+            <!-- Form for BMI Input -->
+            <form id="bmiForm">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
+
+                <label for="height">Height (m):</label>
+                <input type="number" id="height" name="height" placeholder="Enter your height" step="0.01" required>
+
+                <button type="submit">Calculate BMI</button>
+            </form>
+
+            <!-- BMI Result Display -->
+            <div id="bmiResult" class="result-block">
+                <!-- The BMI result will be dynamically shown here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Donatus Oragbon</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
