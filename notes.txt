@@ -1,3 +1,6 @@
 1. GitHub collaboration.(file name and location)
 2. nav class active
 3. Template inheritance.
+4. Standard Navigation bars
+5. Footer at the bottom of the page(no space left after footer)
+6. Extensions and shared style file
